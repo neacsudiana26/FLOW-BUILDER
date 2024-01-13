@@ -3,10 +3,10 @@
 #include <string>
 #include <fstream>
 #include <regex>
+#include <cstring> 
+
 using namespace std;
 
-
-//test 1
 class Step
 {
 private:
@@ -542,6 +542,7 @@ void interface();
 void ExistingFlow();
 void DeleteFlow();
 void CreateFlow();
+void NumberofFlows();
 
 void interface()
 {
@@ -558,8 +559,8 @@ void interface()
     cout << "*  1. I want to build a flow using existing predefined steps*\n";
     cout << "*  2. I want to see a flow that I have created              *\n";
     cout << "*  3. I want to delete a flow                               *\n";
-    cout << "*  4. Maybe next time :)                                    *\n";
-    cout << "*  5. How many flows are in this                                                          *\n";
+    cout << "*  4. How many flows are in this                            *\n";
+    cout << "*  5. Maybe next time :)                                    *\n";
     cout << "*  Your option is ___                                       *\n";
     cout << "*                                                           *\n";
     cout << "*************************************************************\n";
@@ -579,8 +580,44 @@ void interface()
         DeleteFlow();
         break;
     case 4:
-        return;
+    NumberofFlows();
+        break;
+    case 5:
+    return ;
     }
+}
+
+void NumberofFlows(){
+
+    ifstream inputFile("Output.txt");
+
+    if (!inputFile.is_open()) {
+        cout << "Unable to open the input file." << endl;
+    }
+
+    // Read the entire content of the file into a string
+    string content((istreambuf_iterator<char>(inputFile)), istreambuf_iterator<char>());
+
+    // Close the input file
+    inputFile.close();
+
+    // Construct the delimiter
+    const char* delimiter = "***";
+
+    // Tokenize the content using strtok
+    char* token = strtok(const_cast<char*>(content.c_str()), delimiter);
+
+    int paragraphCount = 0;
+
+    // Iterate over tokens and count paragraphs
+    while (token != nullptr) {
+        ++paragraphCount;
+        token = strtok(nullptr, delimiter);
+    }
+
+    cout << "The number of flows is  " << paragraphCount-1 << endl;
+     cout << "What to do next?" << endl;
+    interface();
 }
 
 void ExistingFlow()
@@ -719,7 +756,7 @@ void DeleteFlow()
     cout << "You have deleted your flow! What to do next?" << endl;
     interface();
 }
- int g= 0;
+
 void CreateFlow()
 {
     string option;
@@ -881,7 +918,6 @@ void CreateFlow()
     j->set_name("EndStep");
     builder.add_Step(j);
     builder.get_Step(i)->execute();
-    g++
 
     interface();
 }
