@@ -5,6 +5,8 @@
 #include <regex>
 using namespace std;
 
+
+//test 1
 class Step
 {
 private:
@@ -557,7 +559,7 @@ void interface()
     cout << "*  2. I want to see a flow that I have created              *\n";
     cout << "*  3. I want to delete a flow                               *\n";
     cout << "*  4. Maybe next time :)                                    *\n";
-    cout << "*                                                           *\n";
+    cout << "*  5. How many flows are in this                                                          *\n";
     cout << "*  Your option is ___                                       *\n";
     cout << "*                                                           *\n";
     cout << "*************************************************************\n";
@@ -717,7 +719,7 @@ void DeleteFlow()
     cout << "You have deleted your flow! What to do next?" << endl;
     interface();
 }
-
+ int g= 0;
 void CreateFlow()
 {
     string option;
@@ -879,6 +881,7 @@ void CreateFlow()
     j->set_name("EndStep");
     builder.add_Step(j);
     builder.get_Step(i)->execute();
+    g++
 
     interface();
 }
