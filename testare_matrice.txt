@@ -1,0 +1,13 @@
+1. Utilizatorul poate adauga flow-uri
+2. Utilizatorul poate sterge un flow pe baza titlului
+3. Utilizatorul poate vedea un flow pe baza titlului
+4. Utilizatorul poate vedea doar cate flow uri au fost create
+5. Utilizatorul poate aduga un TitleStep, unde introduce un titlu si un subtitlu
+6. Utilizatorul poate adauga un TextStep, unde introduce un text si copia lui
+7. Utilizatorul poate sa adauge la TextInput o descriere
+8. Utlizatorul la number input poate adauga o descriere si sa introduca un numar pe baza caruia poate sa foloseasca comenzile de adunare, scadere inmultire, impartire de cate ori doreste pe baza acelui numar
+9. Utilizatorul la display step poate afisa continutul unui fisier ori txt ori csv, dar care trebuie sa existe
+10. Utilizatorul poate aduga fisier txt
+11. Utlizatorul poate adauga un fiser csv
+12. Utilizatorul la partea de output step introduce intr un fisier mare ce step uri doreste, dar are si un titlu si o descriere
+13. Utlizatorul este atentionat atunci cand apare partea de end step

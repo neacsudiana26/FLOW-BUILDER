@@ -16,21 +16,3 @@ StepNumberInputwith the description numar and number input 5
 Step CalculusStep with steps 3 3 and operation /
 Step TextFile has the description la and txt file nameTXT.txt
 ***
-Scoala
-munca
-StepTextStephas the title da and copy: nu
-StepTextStephas the title da and copy: nu
-StepTextInputhas the description trebuie and text input lucrat
-StepNumberInputwith the description numar and number input 5
-Step CalculusStep with steps 3 3 and operation /
-Step TextFile has the description la and txt file nameTXT.txt
-***
-Scoala
-munca
-StepTextStephas the title da and copy: nu
-StepTextStephas the title da and copy: nu
-StepTextInputhas the description trebuie and text input lucrat
-StepNumberInputwith the description numar and number input 5
-Step CalculusStep with steps 3 3 and operation /
-Step TextFile has the description la and txt file nameTXT.txt
-***
