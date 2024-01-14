@@ -11,3 +11,4 @@
 11. Utlizatorul poate adauga un fiser csv
 12. Utilizatorul la partea de output step introduce intr un fisier mare ce step uri doreste, dar are si un titlu si o descriere
 13. Utlizatorul este atentionat atunci cand apare partea de end step
+14. Atunci cand vreau sa mi afiseze cate flow uri am imi da cu una in plus

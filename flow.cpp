@@ -615,7 +615,7 @@ void NumberofFlows(){
         token = strtok(nullptr, delimiter);
     }
 
-    cout << "The number of flows is  " << paragraphCount-1 << endl;
+    cout << "The number of flows is  " << paragraphCount -1 << endl;
      cout << "What to do next?" << endl;
     interface();
 }
